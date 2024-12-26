@@ -1,0 +1,10 @@
+<div>
+    <h1>Order List</h1>
+    <ul>
+      <li *ngFor="let order of orders">
+        <span>{{ order.productName }} - {{ order.quantity }} - {{ order.price }}</span>
+        <button mat-button (click)="removeOrder(order)">Remove Order</button>
+      </li>
+    </ul>
+  </div>
+  
